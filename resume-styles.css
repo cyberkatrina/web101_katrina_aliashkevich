@@ -1,8 +1,94 @@
 body {
   margin: 0;
-  background-color: aqua;
+  color: rgb(67, 116, 207);
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  margin: 5px;
+  font-size: 50px;
 }
 
 .grid {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  padding-right: 10px;
   display: grid;
+  /* grid-template-areas:
+    "pic     name   name"
+    "pic    summary skills"
+    "contact work    work"
+    "contact work1   work1"
+    "contact work2   work2"
+    "ref    school   school"
+    "ref    school1 school1"
+    "ref    school2 school2"; */
+  /* gap: 10px; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.pic {
+  grid-area: 1/1/3/2;
+  background-image: url("./rihanna.jpeg");
+  background-size: 95%;
+  background-repeat: no-repeat;
+}
+
+.name {
+  grid-area: 1/2/2/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.summary {
+  grid-area: 2/2/3/3;
+}
+
+.skills {
+  grid-area: 2/3/3/4;
+}
+
+.contact {
+  grid-area: 3/1/6/2;
+  background-color: rgb(67, 116, 207);
+  color: white;
+}
+
+.work {
+  grid-area: 3/2/4/4;
+  display: flex;
+  align-items: center;
+}
+
+.work1 {
+  grid-area: 4/2/5/4;
+}
+
+.work2 {
+  grid-area: 5/2/6/4;
+}
+
+.ref {
+  grid-area: 6/1/9/2;
+  background-color: rgb(67, 116, 207);
+  color: white;
+}
+
+.school {
+  grid-area: 6/2/7/4;
+  display: flex;
+  align-items: center;
+}
+
+.school1 {
+  grid-area: 7/2/8/4;
+  display: flex;
+}
+
+.school2 {
+  grid-area: 8/2/9/4;
+  display: flex;
 }
