@@ -34,6 +34,7 @@ h3, h4 {
   background-image: url("./rihanna.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  /* grid-area: "pic"; */
 }
 
 .name {

@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact-styles.css">
+  <script src="contact-script.js"></script>
+</head>
+<body>
+  <form action="result.html" method="GET" enctype="multipart/form-data">
+    <div id="grid">
+        <div id="title">
+          <h1>Contact Form</h1>
+        </div>
+        <div id="email">
+          <label for="email">Email</label><br>
+          <input type="email" name="email" required>
+        </div>
+        <div id="comment">
+          <label for="comment">Comment</label><br>
+          <textarea name="comments" minlength="20" maxlength="500" placeholder="comments"></textarea>
+        </div>
+        <div id="check">
+          <label>How did you hear about me?</label><br>
+          <label>
+            <input type="checkbox" name="classmate" id="classmate">Classmate
+          </label>
+          <label>
+            <input type="checkbox" name="resume" id="resume">Resume Submission
+          </label>
+          <label>
+            <input type="checkbox" name="link" id="link">LinkedIn
+          </label>
+          <label>
+            <input type="checkbox" name="coding" id="coding">Coding Academy Rec
+          </label>
+        </div>
+        <div id="radio">
+          <label>Would you like to be contacted back?</label><br>
+          <label>
+            <input type="radio" name="contact" value="yes">Yes
+          </label>
+          <label>
+            <input type="radio" name="contact" value="no">No
+          </label>
+          
+        </div>
+        <div id="birth">
+          <label>Birthday</label><br>
+          <input type="date" name="date">
+        </div>
+        <div id="submit">
+          <input type="submit" id="submit">
+        </div>
+    </div>
+  </form>
+</body>
+</html>

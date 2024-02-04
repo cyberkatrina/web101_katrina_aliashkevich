@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #64afc2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div {
+  height: 120px;
+}
+
+input, textarea{
+  max-width: 60%;
+  background-color: #DEEEF3;
+}
+
+
+#grid {
+  display: grid;
+  grid-template-areas:
+  "title  title"
+  "email   check"
+  "email   check"
+  "comment radio"
+  "comment birth"
+  "submit  submit";
+  padding-top: 20px;
+}
+
+#title {
+  display: flex;
+  grid-area: title;
+  justify-content: center;
+
+}
+
+#email {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+}
+
+#check {
+  grid-area: check;
+  display: flex;
+  flex-direction: column;
+}
+
+#comment {
+  grid-area: comment;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#radio {
+  grid-area: radio;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#birth {
+  grid-area: birth;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#submit {
+  grid-area: submit;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#email, #comment {
+  padding-left: 150px;
+}
+
+br {
+  line-height: 10px;
+}
+
+@media (max-width: 992px) { 
+  #email, #comment {
+    padding-left: 15px;
+  }
+
+}
